@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="classes.css">
+    <title>Classes</title>
+</head>
+<body style="background-color:black;">
+    <p style="background-color: blanchedalmond;">!!Test Line!!</p>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for classes..">
+    
+    <ul id="myUL">
+        <li><a href="https://catalogue.usask.ca/CMPT-100" target="_blank">CMPT 100.3: Introduction to Computing</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-116" target="_blank">CMPT 116.3: Computing 1</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-120" target="_blank">CMPT 120.3: Digital Document Processing</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-140" target="_blank">CMPT 140.3: Introduction to Creative Computing</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-141" target="_blank">CMPT 141.3: Introduction to Computer Science</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-142" target="_blank">CMPT 142.3: Introdiuction to Computer Science for Engineers</a></li>
+        <li><a href="https://catalogue.usask.ca/CMPT-145" target="_blank">CMPT 145.3: Principels of Computer Science</a></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
