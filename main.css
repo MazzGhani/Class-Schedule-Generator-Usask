@@ -1,23 +1,20 @@
-div{
-    width: 1500px;
-    height  : 50px;   
-    position: relative;
-    z-index : 1;
-    color:palegoldenrod;
+div {
+  width: 1500px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  color: palegoldenrod;
 }
 
-p{
-    text-align: center;
-    font-family: Verdana;
-    color:blanchedalmond;
+p {
+  text-align: center;
+  font-family: "Major Mono Display", monospace;
+  color: blanchedalmond;
 }
 
-
-
-a{
-    font-size: 35px;
-    font-family: Verdana;
-    color: blue;
-    text-decoration: none;
-
+a {
+  font-size: 35px;
+  font-family: "Major Mono Display", monospace;
+  color: blanchedalmond;
+  text-decoration: none;
 }
