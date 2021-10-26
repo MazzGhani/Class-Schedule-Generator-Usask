@@ -12,6 +12,15 @@ p {
   color: blanchedalmond;
 }
 
+#mainIdea {
+  position: fixed;
+  left: 20px;
+  top: 200px;
+  background-color: black;
+  font-family: "Major Mono Display", monospace;
+  color: blanchedalmond;
+}
+
 a {
   font-size: 35px;
   font-family: "Major Mono Display", monospace;
