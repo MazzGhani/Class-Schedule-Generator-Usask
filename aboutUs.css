@@ -1,31 +1,24 @@
-div {
-  width: 1500px;
-  height: 50px;
-  position: relative;
-  z-index: 1;
-  color: palegoldenrod;
-}
-
-#titlePage {
+h1 {
   text-align: center;
   font-size: x-large;
   font-family: "Major Mono Display", monospace;
   color: blanchedalmond;
 }
+#Mazz {
+  text-align: left;
 
-p {
   font-family: "Major Mono Display", monospace;
   color: blanchedalmond;
 }
 
-a {
-  font-size: 35px;
+#Jingxi {
+  text-align: right;
   font-family: "Major Mono Display", monospace;
   color: blanchedalmond;
-  text-decoration: none;
 }
 
-ul {
+#Interests1 {
+  text-align: left;
   font-family: "Major Mono Display", monospace;
   color: blanchedalmond;
 }
